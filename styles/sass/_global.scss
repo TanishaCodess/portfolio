@@ -1,0 +1,72 @@
+// @import 'variables';
+html {
+    font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    letter-spacing: .1rem;
+    font-family: $FontHeading;
+}
+
+h1 {
+    font-size: clamp(3rem, 2.5vw, 5rem);
+    font-weight: 500;
+}
+
+h2 {
+    font-size: clamp(2rem, 2.5vw, 3rem);
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 2rem;
+    color: $ParagraphColor;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+    font-family: $FontParagraph;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    letter-spacing: .1rem;
+    font-family: $FontParagraph;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    background-color: transparent;
+    border: 0;
+}
+
+p {
+    font-size: 1.6rem;
+    font-family: $FontParagraph;
+    color: $ParagraphColor;
+}
+
+span {
+    font-size: 1.4rem;
+    letter-spacing: .1rem;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}

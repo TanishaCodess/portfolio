@@ -1,0 +1,340 @@
+        @import 'variables';
+        @import 'setup';
+        @import 'global';
+        @import 'animations';
+        // Header
+        header {
+            background-image: url("../Assets/images/background.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+        
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding-top: 10px;
+            .logo {
+                font-size: 5rem;
+                font-family: $FontParagraph;
+                margin-left: 25px;
+                color: $ParagraphColor;
+                padding: 5px;
+                border-radius: 10px;
+            }
+            .navUl {
+                width: 50%;
+                display: flex;
+                justify-content: space-evenly;
+                margin: 20px 25px 0 0;
+            }
+            a {
+                font-size: 2rem;
+                font-weight: bold;
+                padding: 5px 10px;
+            }
+            .hamburger {
+                font-size: 3.5rem;
+                cursor: pointer;
+                display: none;
+            }
+            // .hamburger:focus,
+            // .hamburger:active {
+            //     outline: none;
+            // }
+            .aboutLink {
+                a {
+                    color: $GrayLight;
+                    background-color: $RedDark;
+                }
+            }
+            .skillsLink {
+                a {
+                    color: $SkyblueDark;
+                    background-color: $SkyBlueShadow;
+                }
+            }
+            .projectsLink {
+                a {
+                    color: $PinkDark;
+                    background-color: $PinkBgShadow;
+                }
+            }
+            .contactLink {
+                a {
+                    color: $YellowDark;
+                    background-color: $YellowBgShadow;
+                }
+            }
+        }
+        
+        .tag {
+            color: $RedDark;
+            background-color: $RedDarkShadow;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: clamp(1.5rem, 2.5vw, 2rem);
+        }
+        
+        .subTitle {
+            color: $GrayDark;
+        }
+        
+        .profileSection {
+            display: flex;
+            margin-top: 25px;
+            .titleInfo {
+                margin-top: 150px;
+                width: 45%;
+                .subTitle {
+                    font-size: 2rem;
+                }
+                i {
+                    margin-right: 5px;
+                }
+                h1 {
+                    margin: 10px 0 10px 0;
+                }
+                p {
+                    margin-bottom: 25px;
+                }
+            }
+            .resumeLink {
+                margin-top: 20px;
+            }
+            .profilePic {
+                width: 55%;
+                img {
+                    width: 100%;
+                    max-width: 550px;
+                    border-radius: 50%;
+                    box-shadow: 15px 15px 0px 0px $SkyBlueShadow;
+                }
+            }
+        }
+        
+        // About
+        .aboutSection {
+            margin-top: 75px;
+            margin-bottom: 100px;
+            width: 60%;
+            box-shadow: -15px 15px 0px 0px rgba(186, 186, 186, 0.22);
+            padding: 50px;
+            letter-spacing: 0.1rem;
+            line-height: 2.5rem;
+            .aboutHeading {
+                h2 {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        
+        // Skills
+        .skills {
+            margin-bottom: 75px;
+            background-color: $OffWhiteBackground;
+            padding: 25px 0;
+            .tag {
+                color: $SkyblueDark;
+                background-color: $SkyBlueShadow;
+            }
+            .skillsDisplay {
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 100%;
+                }
+                li {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-items: space-between;
+                    text-align: center;
+                    margin: 20px 0;
+                    width: calc(100% /4);
+                }
+                i {
+                    font-size: 5rem;
+                    line-height: 5rem;
+                }
+                img {
+                    height: 50px;
+                }
+                span {
+                    font-weight: 500;
+                    color: $ParagraphColor;
+                    padding-top: 5px;
+                }
+            }
+        }
+        
+        // Projects
+        .projectsDisplay {
+            margin-bottom: 75px;
+            span {
+                color: $PinkDark;
+                background-color: $PinkBgShadow;
+            }
+            .project {
+                display: flex;
+                margin-top: 20px;
+                background: $OffWhiteBackground;
+                .projImg,
+                .projDetails {
+                    width: calc((100% / 2) - 40px);
+                }
+                .projImg {
+                    margin: 10px;
+                }
+                .projDetails {
+                    margin: 10px;
+                    padding-top: 50px;
+                    text-align: center;
+                }
+                p {
+                    margin-bottom: 20px;
+                }
+                h3 {
+                    color: $HeadingColor;
+                }
+                .bigRed {
+                    margin: 15px;
+                }
+            }
+        }
+        
+        .bigRed {
+            color: $GrayLight;
+            background-color: $RedDark;
+            padding: 10px;
+            border-radius: 20px;
+        }
+        
+        // Contact
+        .contactSection {
+            width: 60%;
+            margin: 0 auto;
+            box-shadow: -15px 15px 0px 0px rgba(186, 186, 186, 0.22);
+            padding: 50px;
+            margin-bottom: 75px;
+            p,
+            span {
+                text-align: center;
+                font-size: 2rem;
+            }
+            .tag {
+                color: $YellowDark;
+                background-color: $YellowBgShadow;
+            }
+            .emailSec {
+                display: flex;
+                justify-content: center;
+            }
+            .clipboard {
+                cursor: pointer;
+                i {
+                    font-size: 2rem;
+                    color: $RedDark;
+                    background-color: $RedLight;
+                    border-radius: 20px;
+                    padding: 10px 13px;
+                }
+            }
+            .contactDisplay {
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                margin-top: 30px;
+                i {
+                    font-size: 2rem;
+                    padding: 10px;
+                    border-radius: 20px;
+                    position: absolute;
+                    top: -20px;
+                    left: 10px;
+                }
+            }
+            .contact1,
+            .contact2,
+            .contact3,
+            .contact4 {
+                border-radius: 5px;
+                position: relative;
+                margin: 0 10px 30px 10px;
+                padding: 15px;
+                text-align: center;
+                width: 200px;
+            }
+            .contact1 {
+                border: 1px solid $RedDark;
+                i {
+                    color: $RedDark;
+                    background-color: $RedLight;
+                }
+            }
+            .contact2 {
+                border: 1px solid $SkyblueDark;
+                i {
+                    color: $SkyblueDark;
+                    background-color: $SkyblueLight;
+                }
+            }
+            .contact3 {
+                border: 1px solid $YellowDark;
+                i {
+                    color: $YellowDark;
+                    background-color: $YellowLight;
+                }
+            }
+            .contact4 {
+                border: 1px solid $PinkDark;
+                i {
+                    color: $PinkDark;
+                    background-color: $PinkLight;
+                }
+            }
+        }
+        
+        // 
+        footer {
+            text-align: center;
+            background-color: $OffWhiteBackground;
+        }
+        
+        // Media Queries
+        @media (max-width: 1000px) {
+            nav {
+                .navUl {
+                    display: none;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    width: 100%;
+                    margin: 0;
+                    li {
+                        margin: 10px 0;
+                    }
+                }
+                .navUl.show {
+                    display: flex;
+                }
+                .hamburger {
+                    display: block;
+                }
+            }
+            .aboutSection {
+                width: 80%;
+            }
+        }
+        
+        @media (max-width: 750px) {
+            .profileSection {
+                flex-direction: column-reverse;
+                align-items: center;
+                margin: 0;
+                .titleInfo {
+                    margin: 20px 0;
+                    text-align: center;
+                }
+            }
+        }
