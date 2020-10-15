@@ -35,36 +35,50 @@
             }
             .hamburger {
                 font-size: 3.5rem;
+                padding: 0px 20px;
                 cursor: pointer;
                 display: none;
             }
-            // .hamburger:focus,
-            // .hamburger:active {
-            //     outline: none;
-            // }
+            .hamburger:hover,
+            .hamburger:focus {
+                color: $RedDark;
+                background-color: $RedLight;
+            }
             .aboutLink {
-                a {
-                    color: $GrayLight;
-                    background-color: $RedDark;
-                }
+                color: $GrayLight;
+                background-color: $RedDark;
+            }
+            .aboutLink:hover,
+            .aboutLink:focus {
+                color: $RedDark;
+                background-color: $RedLight;
             }
             .skillsLink {
-                a {
-                    color: $SkyblueDark;
-                    background-color: $SkyBlueShadow;
-                }
+                color: $SkyblueDark;
+                background-color: $SkyBlueShadow;
+            }
+            .skillsLink:hover,
+            .skillsLink:focus {
+                color: $SkyblueLight;
+                background-color: $SkyblueDark;
             }
             .projectsLink {
-                a {
-                    color: $PinkDark;
-                    background-color: $PinkBgShadow;
-                }
+                color: $PinkDark;
+                background-color: $PinkBgShadow;
+            }
+            .projectsLink:hover,
+            .projectsLink:focus {
+                color: $PinkLight;
+                background-color: $PinkDark;
             }
             .contactLink {
-                a {
-                    color: $YellowDark;
-                    background-color: $YellowBgShadow;
-                }
+                color: $YellowDark;
+                background-color: $YellowBgShadow;
+            }
+            .contactLink:hover,
+            .contactLink:focus {
+                color: $YellowLight;
+                background-color: $YellowDark;
             }
         }
         
@@ -83,7 +97,7 @@
             display: flex;
             margin-top: 25px;
             .titleInfo {
-                margin-top: 150px;
+                margin: 150px 0 0 25px;
                 width: 45%;
                 .tag {
                     color: $RedDark;
@@ -218,6 +232,12 @@
             border-radius: 20px;
         }
         
+        .bigRed:hover,
+        .bigRed:focus {
+            background-color: $GrayLight;
+            color: $RedDark;
+        }
+        
         // Contact
         .contactSection {
             width: 60%;
@@ -280,12 +300,20 @@
                     background-color: $RedLight;
                 }
             }
+            .contact1:hover,
+            .contact1:focus {
+                background-color: $RedLight;
+            }
             .contact2 {
                 border: 1px solid $SkyblueDark;
                 i {
                     color: $SkyblueDark;
                     background-color: $SkyblueLight;
                 }
+            }
+            .contact2:hover,
+            .contact2:focus {
+                background-color: $SkyblueLight;
             }
             .contact3 {
                 border: 1px solid $YellowDark;
@@ -294,12 +322,20 @@
                     background-color: $YellowLight;
                 }
             }
+            .contact3:hover,
+            .contact3:focus {
+                background-color: $YellowLight;
+            }
             .contact4 {
                 border: 1px solid $PinkDark;
                 i {
                     color: $PinkDark;
                     background-color: $PinkLight;
                 }
+            }
+            .contact4:hover,
+            .contact4:focus {
+                background-color: $PinkLight;
             }
         }
         

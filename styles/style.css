@@ -284,11 +284,11 @@ h4 {
 
 h1 {
   font-size: clamp(3rem, 2.5vw, 5rem);
-  font-weight: 500;
+  font-weight: 700;
 }
 
 h2 {
-  font-size: clamp(2rem, 2.5vw, 3rem);
+  font-size: clamp(2rem, 2.5vw, 3.5rem);
   margin-top: 10px;
 }
 
@@ -723,28 +723,59 @@ nav a {
 
 nav .hamburger {
   font-size: 3.5rem;
+  padding: 0px 20px;
   cursor: pointer;
   display: none;
 }
 
-nav .aboutLink a {
+nav .hamburger:hover,
+nav .hamburger:focus {
+  color: #fc3549;
+  background-color: #ffebed;
+}
+
+nav .aboutLink {
   color: #f3f3f3;
   background-color: #fc3549;
 }
 
-nav .skillsLink a {
+nav .aboutLink:hover,
+nav .aboutLink:focus {
+  color: #fc3549;
+  background-color: #ffebed;
+}
+
+nav .skillsLink {
   color: #22a3ab;
   background-color: rgba(34, 163, 171, 0.22);
 }
 
-nav .projectsLink a {
+nav .skillsLink:hover,
+nav .skillsLink:focus {
+  color: #dcfdff;
+  background-color: #22a3ab;
+}
+
+nav .projectsLink {
   color: #ed00d4;
   background-color: rgba(237, 0, 212, 0.22);
 }
 
-nav .contactLink a {
+nav .projectsLink:hover,
+nav .projectsLink:focus {
+  color: #ffd5f4;
+  background-color: #ed00d4;
+}
+
+nav .contactLink {
   color: #c3c455;
   background-color: rgba(195, 196, 85, 0.22);
+}
+
+nav .contactLink:hover,
+nav .contactLink:focus {
+  color: #feffae;
+  background-color: #c3c455;
 }
 
 .tag {
@@ -766,7 +797,7 @@ nav .contactLink a {
 }
 
 .profileSection .titleInfo {
-  margin-top: 150px;
+  margin: 150px 0 0 25px;
   width: 45%;
 }
 
@@ -931,6 +962,12 @@ nav .contactLink a {
   border-radius: 20px;
 }
 
+.bigRed:hover,
+.bigRed:focus {
+  background-color: #f3f3f3;
+  color: #fc3549;
+}
+
 .contactSection {
   width: 60%;
   margin: 0 auto;
@@ -1014,12 +1051,22 @@ nav .contactLink a {
   background-color: #ffebed;
 }
 
+.contactSection .contact1:hover,
+.contactSection .contact1:focus {
+  background-color: #ffebed;
+}
+
 .contactSection .contact2 {
   border: 1px solid #22a3ab;
 }
 
 .contactSection .contact2 i {
   color: #22a3ab;
+  background-color: #dcfdff;
+}
+
+.contactSection .contact2:hover,
+.contactSection .contact2:focus {
   background-color: #dcfdff;
 }
 
@@ -1032,12 +1079,22 @@ nav .contactLink a {
   background-color: #feffae;
 }
 
+.contactSection .contact3:hover,
+.contactSection .contact3:focus {
+  background-color: #feffae;
+}
+
 .contactSection .contact4 {
   border: 1px solid #ed00d4;
 }
 
 .contactSection .contact4 i {
   color: #ed00d4;
+  background-color: #ffd5f4;
+}
+
+.contactSection .contact4:hover,
+.contactSection .contact4:focus {
   background-color: #ffd5f4;
 }
 
