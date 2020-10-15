@@ -69,8 +69,6 @@
         }
         
         .tag {
-            color: $RedDark;
-            background-color: $RedDarkShadow;
             padding: 5px 10px;
             border-radius: 20px;
             font-weight: 600;
@@ -87,6 +85,10 @@
             .titleInfo {
                 margin-top: 150px;
                 width: 45%;
+                .tag {
+                    color: $RedDark;
+                    background-color: $RedDarkShadow;
+                }
                 .subTitle {
                     font-size: 2rem;
                 }
@@ -124,6 +126,11 @@
             letter-spacing: 0.1rem;
             line-height: 2.5rem;
             .aboutHeading {
+                .tag {
+                    color: $RedDark;
+                    background-color: $RedDarkShadow;
+                    font-size: clamp(1.3rem, 2.5vw, 2rem);
+                }
                 h2 {
                     margin-bottom: 20px;
                 }
@@ -218,14 +225,14 @@
             box-shadow: -15px 15px 0px 0px rgba(186, 186, 186, 0.22);
             padding: 50px;
             margin-bottom: 75px;
-            p,
-            span {
+            p {
                 text-align: center;
-                font-size: 2rem;
+                font-size: clamp(1.5rem, 2.5vw, 2rem);
             }
             .tag {
                 color: $YellowDark;
                 background-color: $YellowBgShadow;
+                font-size: clamp(1.3rem, 2.5vw, 2rem);
             }
             .emailSec {
                 display: flex;
@@ -325,6 +332,24 @@
             .aboutSection {
                 width: 80%;
             }
+            .projectsDisplay {
+                .project {
+                    flex-direction: column;
+                    align-items: center;
+                    .projImg,
+                    .projDetails {
+                        width: 100%;
+                        margin: 0;
+                    }
+                    .projDetails {
+                        padding-top: 0;
+                    }
+                }
+                .middle {
+                    display: flex;
+                    flex-direction: column-reverse;
+                }
+            }
         }
         
         @media (max-width: 750px) {
@@ -333,8 +358,30 @@
                 align-items: center;
                 margin: 0;
                 .titleInfo {
-                    margin: 20px 0;
+                    margin: 30px 0;
                     text-align: center;
+                }
+            }
+            .contactSection {
+                width: 80%;
+            }
+        }
+        
+        @media (max-width: 550px) {
+            .skills {
+                .skillsDisplay {
+                    li {
+                        width: calc(100% /3);
+                    }
+                }
+            }
+            .contactSection {
+                text-align: center;
+                .emailSec {
+                    flex-direction: column;
+                    p {
+                        margin: 5px 0;
+                    }
                 }
             }
         }

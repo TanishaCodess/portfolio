@@ -748,8 +748,6 @@ nav .contactLink a {
 }
 
 .tag {
-  color: #fc3549;
-  background-color: rgba(252, 53, 73, 0.15);
   padding: 5px 10px;
   border-radius: 20px;
   font-weight: 600;
@@ -770,6 +768,11 @@ nav .contactLink a {
 .profileSection .titleInfo {
   margin-top: 150px;
   width: 45%;
+}
+
+.profileSection .titleInfo .tag {
+  color: #fc3549;
+  background-color: rgba(252, 53, 73, 0.15);
 }
 
 .profileSection .titleInfo .subTitle {
@@ -813,6 +816,12 @@ nav .contactLink a {
   padding: 50px;
   letter-spacing: 0.1rem;
   line-height: 2.5rem;
+}
+
+.aboutSection .aboutHeading .tag {
+  color: #fc3549;
+  background-color: rgba(252, 53, 73, 0.15);
+  font-size: clamp(1.3rem, 2.5vw, 2rem);
 }
 
 .aboutSection .aboutHeading h2 {
@@ -931,15 +940,15 @@ nav .contactLink a {
   margin-bottom: 75px;
 }
 
-.contactSection p,
-.contactSection span {
+.contactSection p {
   text-align: center;
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
 }
 
 .contactSection .tag {
   color: #c3c455;
   background-color: rgba(195, 196, 85, 0.22);
+  font-size: clamp(1.3rem, 2.5vw, 2rem);
 }
 
 .contactSection .emailSec {
@@ -1064,6 +1073,32 @@ footer {
   .aboutSection {
     width: 80%;
   }
+  .projectsDisplay .project {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .projectsDisplay .project .projImg,
+  .projectsDisplay .project .projDetails {
+    width: 100%;
+    margin: 0;
+  }
+  .projectsDisplay .project .projDetails {
+    padding-top: 0;
+  }
+  .projectsDisplay .middle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 
 @media (max-width: 750px) {
@@ -1078,7 +1113,28 @@ footer {
     margin: 0;
   }
   .profileSection .titleInfo {
-    margin: 20px 0;
+    margin: 30px 0;
     text-align: center;
+  }
+  .contactSection {
+    width: 80%;
+  }
+}
+
+@media (max-width: 550px) {
+  .skills .skillsDisplay li {
+    width: calc(100% /3);
+  }
+  .contactSection {
+    text-align: center;
+  }
+  .contactSection .emailSec {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactSection .emailSec p {
+    margin: 5px 0;
   }
 }
