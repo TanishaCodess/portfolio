@@ -96,6 +96,7 @@
         .profileSection {
             display: flex;
             margin-top: 25px;
+            padding-bottom: 50px;
             .titleInfo {
                 margin: 150px 0 0 25px;
                 width: 45%;
@@ -130,6 +131,19 @@
             }
         }
         
+        .bigRed {
+            color: $GrayLight;
+            background-color: $RedDark;
+            padding: 10px;
+            border-radius: 20px;
+        }
+        
+        .bigRed:hover,
+        .bigRed:focus {
+            background-color: $GrayLight;
+            color: $RedDark;
+        }
+        
         // About
         .aboutSection {
             margin-top: 75px;
@@ -153,9 +167,8 @@
         
         // Skills
         .skills {
-            margin-bottom: 75px;
             background-color: $OffWhiteBackground;
-            padding: 25px 0;
+            padding: 25px 0 75px 0;
             .tag {
                 color: $SkyblueDark;
                 background-color: $SkyBlueShadow;
@@ -191,6 +204,10 @@
         }
         
         // Projects
+        .projectSec {
+            background-color: $OffWhiteBackground;
+        }
+        
         .projectsDisplay {
             margin-bottom: 75px;
             span {
@@ -200,7 +217,7 @@
             .project {
                 display: flex;
                 margin-top: 20px;
-                background: $OffWhiteBackground;
+                padding-bottom: 20px;
                 .projImg,
                 .projDetails {
                     width: calc((100% / 2) - 40px);
@@ -223,19 +240,6 @@
                     margin: 15px;
                 }
             }
-        }
-        
-        .bigRed {
-            color: $GrayLight;
-            background-color: $RedDark;
-            padding: 10px;
-            border-radius: 20px;
-        }
-        
-        .bigRed:hover,
-        .bigRed:focus {
-            background-color: $GrayLight;
-            color: $RedDark;
         }
         
         // Contact
@@ -386,6 +390,9 @@
                     flex-direction: column-reverse;
                 }
             }
+            .contactSection {
+                width: 80%;
+            }
         }
         
         @media (max-width: 750px) {
@@ -396,14 +403,15 @@
                 .titleInfo {
                     margin: 30px 0;
                     text-align: center;
+                    width: 100%;
                 }
-            }
-            .contactSection {
-                width: 80%;
             }
         }
         
         @media (max-width: 550px) {
+            .aboutSection {
+                padding: 0px 10px;
+            }
             .skills {
                 .skillsDisplay {
                     li {
@@ -413,6 +421,7 @@
             }
             .contactSection {
                 text-align: center;
+                padding: 40px 20px 20px 20px;
                 .emailSec {
                     flex-direction: column;
                     p {
