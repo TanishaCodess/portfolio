@@ -273,6 +273,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  background-color: #fdfdfd;
+}
+
 h1,
 h2,
 h3,
@@ -678,7 +682,6 @@ span {
 }
 
 header {
-  background-image: url("../Assets/images/background.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -797,8 +800,22 @@ nav .contactLink:focus {
   padding-bottom: 50px;
 }
 
+.profileSection .profileCircle {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: 0;
+}
+
+.profileSection .city {
+  position: absolute;
+  left: 20%;
+  bottom: 10%;
+  z-index: -1;
+}
+
 .profileSection .titleInfo {
-  margin: 150px 0 0 25px;
+  margin: 175px 0 0 25px;
   width: 45%;
 }
 
@@ -861,6 +878,13 @@ nav .contactLink:focus {
   padding: 50px;
   letter-spacing: 0.1rem;
   line-height: 2.5rem;
+  position: relative;
+}
+
+.aboutSection .aboutSquare {
+  position: absolute;
+  top: 15px;
+  left: -100px;
 }
 
 .aboutSection .aboutHeading .tag {
@@ -874,13 +898,33 @@ nav .contactLink:focus {
 }
 
 .skills {
-  background-color: #FAFBFD;
   padding: 25px 0 75px 0;
+  position: relative;
+}
+
+.skills .aboutMountains {
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+  z-index: -1;
 }
 
 .skills .tag {
   color: #22a3ab;
   background-color: rgba(34, 163, 171, 0.22);
+}
+
+.skills .skillsDisplay {
+  position: relative;
+}
+
+.skills .skillsDisplay .triangle {
+  position: absolute;
+  right: -10%;
+  bottom: 50%;
+  width: 100px;
+  height: 100px;
+  z-index: 0;
 }
 
 .skills .skillsDisplay ul {
@@ -907,6 +951,7 @@ nav .contactLink:focus {
   text-align: center;
   margin: 20px 0;
   width: calc(100% /4);
+  z-index: 4;
 }
 
 .skills .skillsDisplay i {
@@ -924,10 +969,6 @@ nav .contactLink:focus {
   padding-top: 5px;
 }
 
-.projectSec {
-  background-color: #FAFBFD;
-}
-
 .projectsDisplay {
   margin-bottom: 75px;
 }
@@ -943,6 +984,13 @@ nav .contactLink:focus {
   display: flex;
   margin-top: 20px;
   padding-bottom: 20px;
+  position: relative;
+}
+
+.projectsDisplay .project .halfCircle {
+  position: absolute;
+  left: -15px;
+  top: -15px;
 }
 
 .projectsDisplay .project .projImg,
@@ -970,6 +1018,23 @@ nav .contactLink:focus {
 
 .projectsDisplay .project .bigRed {
   margin: 15px;
+}
+
+.outerContact {
+  position: relative;
+}
+
+.outerContact .mountains {
+  position: absolute;
+  right: 0;
+  top: -400px;
+  z-index: -1;
+}
+
+.outerContact .contactBubble {
+  position: absolute;
+  left: 0;
+  bottom: 10%;
 }
 
 .contactSection {

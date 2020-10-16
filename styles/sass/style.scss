@@ -4,7 +4,7 @@
         @import 'animations';
         // Header
         header {
-            background-image: url("../Assets/images/background.jpg");
+            // background-image: url("../Assets/images/background.jpg");
             background-position: center;
             background-size: cover;
         }
@@ -97,8 +97,20 @@
             display: flex;
             margin-top: 25px;
             padding-bottom: 50px;
+            .profileCircle {
+                position: absolute;
+                right: 0;
+                top: 50%;
+                z-index: 0;
+            }
+            .city {
+                position: absolute;
+                left: 20%;
+                bottom: 10%;
+                z-index: -1;
+            }
             .titleInfo {
-                margin: 150px 0 0 25px;
+                margin: 175px 0 0 25px;
                 width: 45%;
                 .tag {
                     color: $RedDark;
@@ -153,6 +165,12 @@
             padding: 50px;
             letter-spacing: 0.1rem;
             line-height: 2.5rem;
+            position: relative;
+            .aboutSquare {
+                position: absolute;
+                top: 15px;
+                left: -100px;
+            }
             .aboutHeading {
                 .tag {
                     color: $RedDark;
@@ -167,13 +185,28 @@
         
         // Skills
         .skills {
-            background-color: $OffWhiteBackground;
             padding: 25px 0 75px 0;
+            position: relative;
+            .aboutMountains {
+                position: absolute;
+                left: 0px;
+                bottom: 0;
+                z-index: -1;
+            }
             .tag {
                 color: $SkyblueDark;
                 background-color: $SkyBlueShadow;
             }
             .skillsDisplay {
+                position: relative;
+                .triangle {
+                    position: absolute;
+                    right: -10%;
+                    bottom: 50%;
+                    width: 100px;
+                    height: 100px;
+                    z-index: 0;
+                }
                 ul {
                     display: flex;
                     flex-wrap: wrap;
@@ -187,6 +220,7 @@
                     text-align: center;
                     margin: 20px 0;
                     width: calc(100% /4);
+                    z-index: 4;
                 }
                 i {
                     font-size: 5rem;
@@ -204,10 +238,6 @@
         }
         
         // Projects
-        .projectSec {
-            background-color: $OffWhiteBackground;
-        }
-        
         .projectsDisplay {
             margin-bottom: 75px;
             span {
@@ -218,6 +248,12 @@
                 display: flex;
                 margin-top: 20px;
                 padding-bottom: 20px;
+                position: relative;
+                .halfCircle {
+                    position: absolute;
+                    left: -15px;
+                    top: -15px;
+                }
                 .projImg,
                 .projDetails {
                     width: calc((100% / 2) - 40px);
@@ -243,6 +279,21 @@
         }
         
         // Contact
+        .outerContact {
+            position: relative;
+            .mountains {
+                position: absolute;
+                right: 0;
+                top: -400px;
+                z-index: -1;
+            }
+            .contactBubble {
+                position: absolute;
+                left: 0;
+                bottom: 10%;
+            }
+        }
+        
         .contactSection {
             width: 60%;
             margin: 0 auto;
